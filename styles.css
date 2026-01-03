@@ -605,8 +605,9 @@ ul {
 .service-images-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 8px;
-    height: 280px;
+    height: 320px;
     border-radius: var(--radius-md);
     overflow: hidden;
 }
