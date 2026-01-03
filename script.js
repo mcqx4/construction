@@ -238,14 +238,21 @@ contactForm.addEventListener('submit', (e) => {
     const phone = formData.get('phone');
     const message = formData.get('message');
 
-    // Формируем сообщение для WhatsApp/Telegram
-    const text = `Здравствуйте! Меня зовут ${name}.%0A%0AТелефон: ${phone}%0A%0A${message ? 'Сообщение: ' + message : ''}`;
+    // Формируем тему и тело письма
+    const subject = `Заявка с сайта от ${name}`;
+    const body = `Здравствуйте!
 
-    // Показываем уведомление
-    alert('Спасибо за заявку! Свяжусь с вами в ближайшее время.');
+Меня зовут: ${name}
+Телефон: ${phone}
 
-    // Очищаем форму
-    contactForm.reset();
+${message ? 'Сообщение:\n' + message : ''}
+
+---
+Отправлено с сайта valera.solutions`;
+
+    // Открываем почтовый клиент
+    const mailtoLink = `mailto:stroim2026@yandex.ru?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
 });
 
 // ===== ПАРАЛЛАКС ЭФФЕКТ ДЛЯ HERO =====
