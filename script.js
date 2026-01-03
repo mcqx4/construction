@@ -140,22 +140,22 @@ const portfolioGrid = document.querySelector('.portfolio-grid');
 
 // Дополнительные фотографии для загрузки
 const additionalPhotos = [
-    { src: 'Media/IMG_3390.JPG', category: 'houses', tag: 'Частный дом', title: 'Строительство' },
-    { src: 'Media/IMG_3391.JPG', category: 'concrete', tag: 'Монолит', title: 'Бетонные работы' },
-    { src: 'Media/IMG_3392.JPG', category: 'roofing', tag: 'Кровля', title: 'Кровельные работы' },
-    { src: 'Media/IMG_3393.JPG', category: 'houses', tag: 'Частный дом', title: 'Объект' },
-    { src: 'Media/IMG_3394.JPG', category: 'other', tag: 'Другое', title: 'Строительство' },
-    { src: 'Media/IMG_3395.JPG', category: 'concrete', tag: 'Фундамент', title: 'Монолитные работы' },
-    { src: 'Media/IMG_3396.JPG', category: 'houses', tag: 'Частный дом', title: 'Готовый объект' },
-    { src: 'Media/IMG_3397.JPG', category: 'roofing', tag: 'Кровля', title: 'Монтаж кровли' },
-    { src: 'Media/IMG_3398.JPG', category: 'other', tag: 'Кладка', title: 'Каменные работы' },
-    { src: 'Media/IMG_3399.JPG', category: 'houses', tag: 'Частный дом', title: 'Строительство' },
-    { src: 'Media/IMG_3403.JPG', category: 'concrete', tag: 'Монолит', title: 'Бетонные работы' },
-    { src: 'Media/IMG_3404.JPG', category: 'houses', tag: 'Частный дом', title: 'Объект' },
-    { src: 'Media/IMG_3405.JPG', category: 'roofing', tag: 'Кровля', title: 'Кровельные работы' },
-    { src: 'Media/IMG_3406.JPG', category: 'other', tag: 'Другое', title: 'Строительство' },
-    { src: 'Media/IMG_3407.JPG', category: 'houses', tag: 'Частный дом', title: 'Готовый объект' },
-    { src: 'Media/IMG_3408.JPG', category: 'concrete', tag: 'Фундамент', title: 'Монолитные работы' },
+    { src: 'Media/IMG_3390.JPG', category: 'houses', tag: 'Частный дом', title: 'Крыльцо' },
+    { src: 'Media/IMG_3391.JPG', category: 'other', tag: 'Интерьер', title: 'Лестница' },
+    { src: 'Media/IMG_3392.JPG', category: 'other', tag: 'Интерьер', title: 'Деревянный дом' },
+    { src: 'Media/IMG_3393.JPG', category: 'other', tag: 'Интерьер', title: 'Камин' },
+    { src: 'Media/IMG_3394.JPG', category: 'other', tag: 'Интерьер', title: 'Прихожая' },
+    { src: 'Media/IMG_3395.JPG', category: 'other', tag: 'Интерьер', title: 'Гостиная' },
+    { src: 'Media/IMG_3396.JPG', category: 'other', tag: 'Интерьер', title: 'Ванная комната' },
+    { src: 'Media/IMG_3397.JPG', category: 'other', tag: 'Интерьер', title: 'Ванная комната' },
+    { src: 'Media/IMG_3398.JPG', category: 'other', tag: 'Интерьер', title: 'Спальня' },
+    { src: 'Media/IMG_3399.JPG', category: 'houses', tag: 'Частный дом', title: 'Современный дом' },
+    { src: 'Media/IMG_3403.JPG', category: 'houses', tag: 'Частный дом', title: 'Современный дом' },
+    { src: 'Media/IMG_3404.JPG', category: 'houses', tag: 'Частный дом', title: 'Современный дом' },
+    { src: 'Media/IMG_3405.JPG', category: 'other', tag: 'Благоустройство', title: 'Дом с бассейном' },
+    { src: 'Media/IMG_3406.JPG', category: 'other', tag: 'Благоустройство', title: 'Дом с бассейном' },
+    { src: 'Media/IMG_3407.JPG', category: 'houses', tag: 'Частный дом', title: 'Терраса' },
+    { src: 'Media/IMG_3408.JPG', category: 'other', tag: 'Интерьер', title: 'Прихожая' },
 ];
 
 let photosLoaded = 0;
